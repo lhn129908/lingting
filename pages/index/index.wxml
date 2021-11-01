@@ -1,0 +1,11 @@
+<view action="" class="sou_suo">
+    <input class="" type="text" confirm-type="search" placeholder="请输入歌手或歌曲名" placeholder-class="input-placeholder"/>
+    <button form-type="submit" size="mini">搜索</button>
+</view>
+   
+<view class="tab_navbar"> 
+    <view class="item">推荐</view>
+    <view class="item">排行榜</view>
+    <view class="item">乐库</view>
+    <view class="item">视频</view>
+</view>

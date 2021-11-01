@@ -1,0 +1,53 @@
+.sou_suo {
+    width          : 90%;
+    height         : 60rpx;
+    margin-left    : 5%;
+    margin-top     : 10rpx;
+    /* display        : flex;
+    flex-direction : row;
+    justify-content: start;
+    flex-wrap      : nowrap; */
+}
+
+.sou_suo input {
+    width           : 80%;
+    height          : 100%;
+    display         : inline-block;
+    border-radius: 30rpx 0rpx 0rpx 30rpx;
+    border       : 1rpx solid #ccc;
+    border-right: 0rpx;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+}
+
+.sou_suo button {
+    height       : 60rpx;
+    display      : inline-block;
+    border       : 1rpx solid #ccc;
+    border-left: 0rpx;
+    border-radius: 0rpx 30rpx 30rpx 0rpx;
+    margin: 0rpx;
+    color: white;
+    background-color: #f87373;
+}
+.input-placeholder{
+    font-size: 14px;
+    text-align: center;
+    color: #dddddd;
+}
+
+.tab_navbar {
+    margin-top: 10rpx;
+    height: 80rpx;
+    width: 100%;
+    background-color: #f7afaf;
+    color: white;
+    font-weight: 700;
+    display: flex;
+}
+.tab_navbar .item{
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
