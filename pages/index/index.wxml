@@ -1,11 +1,106 @@
-<view action="" class="sou_suo">
-    <input class="" type="text" confirm-type="search" placeholder="请输入歌手或歌曲名" placeholder-class="input-placeholder"/>
+<!-- 搜索框 -->
+<view class="sou_suo" bindtap="jump">
+    <input class="" type="text" confirm-type="search" placeholder="请输入歌手或歌曲名" placeholder-class="input-placeholder" />
     <button form-type="submit" size="mini">搜索</button>
 </view>
-   
-<view class="tab_navbar"> 
-    <view class="item">推荐</view>
-    <view class="item">排行榜</view>
-    <view class="item">乐库</view>
-    <view class="item">视频</view>
-</view>
+<!-- 轮播图 -->
+<swiper class="swiper" indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#f87373" autoplay="true" circular="true" easing-function="linear">
+    <swiper-item wx:for="{{slides}}" wx:for-item="item" wx:key="bannerId">
+        <image class="banner" src="{{item.pic}}"></image>
+    </swiper-item>
+</swiper>
+
+<van-tabs active="{{ active }}" bind:change="onChange" color="#f87373" title-active-color="#ffffff" type="card" animated="true" swipeable="true">
+    <!-- ***************推荐***************** -->
+    <van-tab title="推荐">
+        <!-- 推荐歌单 -->
+        <view>
+            <view class="parent">
+                <view class="title">推荐歌单</view>
+                <view class="more" bindtap="more">更多></view>
+            </view>
+            <van-grid column-num="3" border="{{ true }}" gutter="{{ 8 }}">
+                <van-grid-item use-slot wx:for="{{dan}}" wx:for-item="item" wx:key="id" bindtap="gedan" data-gedanid="{{item.id}}">
+                    <image style="width: 100%; height: 90px;" src="{{item.picUrl}}" />
+                    {{item.name}}
+                </van-grid-item>
+            </van-grid>
+        </view>
+        <!-- 推荐mv -->
+        <view>
+            <view class="parent">
+                <view class="title">最新热门MV推荐</view>
+                <view class="more" bindtap="more">更多></view>
+            </view>
+            <view class="tui_mv">
+                <view class="tui_mv_item" wx:for="{{tuimv}}" wx:for-item="item" wx:key="id">
+                    <image src=" {{item.picUrl}}"></image>
+                    <view class="tui_mv_text">{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+        <!-- 推荐新歌 -->
+        <view>
+            <view class="parent">
+                <view class="title">推荐新歌</view>
+                <view class="more" bindtap="more">更多></view>
+            </view>
+            <view class="new_songs" wx:for="{{new}}" wx:for-item="item" wx:key="id">
+                <view class="new_songs_image">
+                    <image src="{{item.picUrl}}"></image>
+                </view>
+                <view class="new_songs_text">
+                    <view class="new_songs_name">{{item.name}}</view>
+                    <view class="new_songs_artist">
+                        <image src="/pages/public/icofont/re.png"></image>
+                        {{item.song.artists[0].name}}★{{item.song.album.company}}☞{{item.song.album.subType}}
+                    </view>
+                </view>
+                <view class="new_songs_right">></view>
+            </view>
+            <!-- 防止遮挡 -->
+            <view style="width: 100%;height: 10rpx;"></view>
+        </view>
+    </van-tab>
+    <!-- ***************排行榜***************** -->
+    <van-tab title="排行榜">
+        <view class="pai_hang" wx:for="{{bang}}" wx:for-item="item" wx:key="id">
+            <view class="pai_hang_image">
+                <image src="{{item.coverImgUrl}}"></image>
+            </view>
+            <view class="pai_hang_text">
+                <view class="pai_hang_name">{{item.name}}</view>
+                <view class="pai_hang_song" wx:for="{{item.tracks}}" wx:for-item="item1">
+                    {{item1.first}}-{{item1.second}}
+                </view>
+            </view>
+        </view>
+    </van-tab>
+    <!-- ***************视频***************** -->
+    <van-tab title="MV">
+        <view class="mv">
+            <view class="mv_content" wx:for="{{allmv}}" wx:for-item="item" wx:key="id">
+                <view class="mv_image">
+                    <image class="mv_imge_big" src="{{item.cover}}"></image>
+                    <view class="mv_imge_zhe"></view>
+                    <image class="mv_imge_small" src="{{item.cover}}"></image>
+                </view>
+                <view class="mv_text">
+                    <view class="mv_text_title">{{item.name}}</view>
+                    <view class="mv_text_name">{{item.artistName}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="more_mv" bindtap="more">到底了，点击查看更多~~~</view>
+    </van-tab>
+    <!-- ***************电台***************** -->
+    <van-tab title="电台">
+        <van-tabs active="{{ active }}">
+            <van-tab title="标签 1">内容 1</van-tab>
+        </van-tabs>
+    </van-tab>
+</van-tabs>
+<!-- 防止遮挡 -->
+<view style="width: 100%;height: 200rpx;"></view>
+<!-- 自定义组件 -->
+<navtab></navtab>

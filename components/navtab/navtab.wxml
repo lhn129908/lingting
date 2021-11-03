@@ -1,0 +1,18 @@
+<van-tabbar active="{{ active }}" bind:change="onChange" inactive-color="#ffffff" active-color="#bbbbbb">
+<!-- ********** -->
+  <van-tabbar-item wx:for="{{list}}" wx:key="url" wx:for-item="item" class="tabitem" >
+      <image
+      slot="icon"
+      src="{{ item.normal }}"
+      mode="aspectFit"
+      style="width: 70rpx; height: 50rpx;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ item.active }}"
+      mode="aspectFit"
+      style="width:70rpx; height: 50rpx;"
+    />
+  {{item.text}}
+  </van-tabbar-item>
+</van-tabbar>

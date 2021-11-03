@@ -1,0 +1,297 @@
+.swiper {
+    height: 450rpx;
+
+    .banner {
+        width: 100%;
+    }
+}
+
+.sou_suo {
+    width        : 90%;
+    height       : 60rpx;
+    margin-left  : 5%;
+    margin-top   : 10rpx;
+    margin-bottom: 10rpx;
+
+
+    >input {
+        width        : 80%;
+        height       : 100%;
+        display      : inline-block;
+        border-radius: 30rpx 0rpx 0rpx 30rpx;
+        border       : 1rpx solid #ccc;
+        border-right : 0rpx;
+        box-sizing   : border-box;
+        padding-left : 20rpx;
+    }
+
+    >button {
+        height          : 60rpx;
+        display         : inline-block;
+        border          : 1rpx solid #ccc;
+        border-left     : 0rpx;
+        border-radius   : 0rpx 30rpx 30rpx 0rpx;
+        margin          : 0rpx;
+        color           : white;
+        background-color: #f87373;
+    }
+
+    .input-placeholder {
+        font-size : 14px;
+        text-align: center;
+        color     : #dddddd;
+    }
+}
+
+.tab_navbar {
+    margin-top      : 10rpx;
+    height          : 80rpx;
+    width           : 100%;
+    background-color: #f7afaf;
+    color           : white;
+    font-weight     : 700;
+    display         : flex;
+
+    .item {
+        flex      : 1;
+        height    : 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+.van-tabs {
+    margin-top: 20rpx;
+}
+
+/* 推荐歌单 */
+.van-grid-item {
+    height    : 300rpx;
+    font-size : 11px;
+    color     : #6b6b6b;
+    text-align: center;
+}
+
+.parent {
+    display    : flex;
+    width      : 100%;
+    height     : 60rpx;
+    margin-left: 20rpx;
+    margin-top : 20rpx;
+
+    .title {
+        width: 80%;
+        color: #6b6b6b;
+    }
+
+    .more {
+        padding-top: 10rpx;
+        color      : #cccccc;
+        font-size  : 12px;
+
+    }
+}
+
+// 推荐mv
+.tui_mv {
+    margin-top: 20rpx;
+    width     : 100%;
+    height    : 260rpx;
+    display   : flex;
+
+    .tui_mv_item {
+        width        : 100%;
+        height       : 100%;
+        padding      : 11rpx;
+        padding-top  : 30rpx;
+        border       : 1px solid #dddddd;
+        border-radius: 20rpx;
+        box-sizing   : border-box;
+        flex         : 1;
+
+        image {
+            width : 160rpx;
+            height: 160rpx;
+        }
+
+        .tui_mv_text {
+            font-size         : 10px;
+            text-align        : center;
+            display           : -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            /* 指定显示文本的行数 */
+            overflow          : hidden;
+            /* 超出隐藏 */
+        }
+    }
+
+}
+
+// 推荐新歌
+.new_songs {
+    display      : flex;
+    width        : 96%;
+    margin-left  : 2%;
+    height       : 140rpx;
+    margin-top   : 10rpx;
+    border-bottom: 1rpx solid #e2e2e2ee;
+    border-radius: 20rpx;
+    box-shadow   : 3rpx 3rpx 2rpx 2rpx rgb(223, 223, 223);
+
+    .new_songs_image {
+        flex        : 2;
+        padding-left: 20rpx;
+        padding-top : 10rpx;
+
+        image {
+            width : 120rpx;
+            height: 120rpx;
+        }
+    }
+
+    .new_songs_text {
+        flex       : 6;
+        padding-top: 20rpx;
+
+        .new_songs_name {
+            font-size: 14px;
+            color    : #666565;
+        }
+
+        .new_songs_artist {
+            font-size : 10px;
+            color     : #8f8f8f;
+            margin-top: 20rpx;
+
+            image {
+                width : 30rpx;
+                height: 30rpx;
+            }
+        }
+    }
+
+    .new_songs_right {
+        flex       : 0.5;
+        padding-top: 54rpx;
+        color      : #8f8f8f;
+
+    }
+}
+
+
+//排行榜
+.pai_hang {
+    display      : flex;
+    width        : 96%;
+    margin-left  : 2%;
+    height       : 200rpx;
+    margin-top   : 10rpx;
+    border       : 1rpx solid #e2e2e2ee;
+    border-radius: 20rpx;
+
+    .pai_hang_image {
+        flex        : 2;
+        padding-left: 20rpx;
+        padding-top : 10rpx;
+
+        image {
+            width : 180rpx;
+            height: 180rpx;
+        }
+    }
+
+    .pai_hang_text {
+        flex        : 6;
+        padding-top : 10rpx;
+        padding-left: 10rpx;
+
+        .pai_hang_name {
+            font-size: 14px;
+            color    : #666565;
+        }
+
+        .pai_hang_song {
+            padding      : 5rpx;
+            font-size    : 12px;
+            color        : #8f8f8f;
+            // margin-top: 20rpx;
+        }
+    }
+}
+
+.mv {
+    width     : 100%;
+    margin-top: 30rpx;
+
+    .mv_content {
+        display   : inline-block;
+        width     : 33.33%;
+        height    : 260rpx;
+        box-sizing: border-box;
+        overflow  : hidden;
+
+        .mv_image {
+            position   : relative;
+            width      : 90%;
+            margin-left: 5%;
+            height     : 170rpx;
+            border     : 1rpx solid #cccccc;
+
+            .mv_imge_big {
+                position: absolute;
+                width   : 100%;
+                height  : 170rpx;
+            }
+            .mv_imge_zhe{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #dddddd93;
+            }
+            .mv_imge_small {
+                position        : absolute;
+                width           : 80%;
+                height          : 80%;
+                margin: 8% 10%;
+                border-radius: 10rpx;
+                border: 1px solid white;
+            }
+
+
+        }
+
+        .mv_text {
+            margin-left: 20rpx;
+
+            .mv_text_title {
+                width             : 100%;
+                font-size         : 12px;
+                display           : -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                /* 指定显示文本的行数 */
+                overflow          : hidden;
+                /* 超出隐藏 */
+
+            }
+
+            .mv_text_name {
+                font-size: 10px;
+                color    : #cac7c7;
+            }
+        }
+
+    }
+
+}
+
+.more_mv{
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40rpx;
+    margin-left: 10%;
+    height: 60rpx;
+    color: #cac7c7;
+}

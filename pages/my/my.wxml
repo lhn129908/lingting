@@ -1,3 +1,2 @@
-<view class="" >
-    我的
-</view>
+<!-- 自定义组件 -->
+<navtab></navtab>

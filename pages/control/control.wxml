@@ -1,2 +1,4 @@
 <!--pages/control/control.wxml-->
 <text>音乐播放页面</text>
+<!-- 自定义组件 -->
+<navtab></navtab>

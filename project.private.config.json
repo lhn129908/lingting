@@ -23,6 +23,18 @@
                     "pathName": "pages/index/index",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "components/navtab/navtab",
+                    "pathName": "components/navtab/navtab",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/more/more",
+                    "pathName": "pages/more/more",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }
