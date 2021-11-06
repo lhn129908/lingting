@@ -1,2 +1,86 @@
-<!--pages/control/control.wxml-->
-<text>音乐播放页面</text>
+<!-- pages/control/control.wxml -->
+<view class="zhengti" style="height:{{height}}px">
+  <view class="top">
+    <view class="fanhui">
+      <i class=" iconfont icon-xiala"></i>
+    </view>
+    <view class="huadong">
+      <view class="gequ">歌曲</view>
+      <view class="geci">歌词</view>
+    </view>
+    <view class="fenxiang">
+      <i class="iconfont icon-daochu"></i>
+    </view>
+  </view>
+  <swiper class="yemian">
+    <swiper-item class="yemian-bofang" item-id="">
+      <view class="img">
+        <image src="{{songs.al.picUrl}}"></image>
+      </view>
+      <view class="zhuoze">
+        <view class="jeisao">
+          <view class="geming">{{songs.name}}</view>
+          <view class="zuozhe" wx:for="{{songs.ar}}" wx:for-item="item" wx:key="id">
+            <view>{{item.name}},</view>
+          </view>
+          <view class="qita">专辑名：{{songs.al.name}}</view>
+        </view>
+        <view class="shoucang">
+          <icon class="iconfont icon-shoucang"></icon>
+        </view>
+      </view>
+      <view class="bofang">
+        <view class="chatu">
+          <button class="iconfont icon-maikefeng"></button>
+          <button class="iconfont icon-tiaojie"></button>
+          <button class="iconfont icon-xiazai"></button>
+          <button class="iconfont icon-pinglun"></button>
+          <button class="iconfont icon-shenglve"></button>
+        </view>
+        <view class="jindutiao">
+          <view class="xuanzhong-jindutiao" style="width:{{leng}}"></view>
+        </view>
+        <view class="shijian">
+          <view class="jinxing">{{currentTime}}</view>
+          <view class="quanbu">{{duration}}</view>
+        </view>
+        <view class="annui">
+          <button type="primary" bindtap="bofang" class="iconfont icon-{{bofang}}"></button>
+          <button type="primary" bindtap="shangyishou" class="iconfont icon-shangyishouge"></button>
+          <button type="primary" bindtap="{{autoplay?'audioPlay':'audioPause'}}" class="iconfont icon-{{autoplay?'bofang':'zanting'}}"></button>
+          <button type="primary" bindtap="xiayisou" class="iconfont icon-xiayishou"></button>
+          <button type="primary" bindtap="liebiao" class="iconfont icon-bofanggedan"></button>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="" item-id="">
+    <scroll-view class="middle" scroll-y="true"  scroll-top="{{scrolltop}}">
+    <view wx:for="{{geci}}"  class="{{activeIndex-1==index?'active':''}}" data-time="{{index}}" bindtap = "ddd">{{item.text}}</view>
+  </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 下拉框 -->
+<view class="select_box" wx:if="{{select}}">
+  <view class="liebiao-top" hover-class="none" hover-stop-propagation="false">
+    <view class="" hover-class="none" hover-stop-propagation="false">播放循序</view>
+  </view>
+  <scroll-view class="liebiao-neirong" scroll-y="true">
+    <view wx:for="{{liebiao}}" wx:for-item="item" wx:key="id">
+      <view class="select_one" bindtap="mySelect">
+        <view class="name" hover-class="none" hover-stop-propagation="false">
+          {{item.name}}
+          <view class="zuoze" hover-class="none" hover-stop-propagation="false">
+            --{{item.zuoze}}
+          </view>
+        </view>
+        <view class="shanchu">
+          <icon type="clear" size="20" data-id="{{item.id}}" bindtap="shanchu"></icon>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="liebiao-fanhui " bindtap="xialafanhui">
+    <icon class="iconfont icon-xiala"></icon>
+  </view>
+</view>
