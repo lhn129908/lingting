@@ -1,2 +1,35 @@
 <!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="container">
+    <view class="player">
+    <video class="videoplayer" src="{{mds[240]}}" >
+    </video>
+    <view class="js">
+    <view class="name">             
+       {{mvs.name}}
+    </view>
+    <view class="artistName">{{mvs.artistName}}</view>
+    <view class="playcount">播放量：{{mvs.playCount}}</view>
+    <view class="publishTime">发布时间:{{mvs.publishTime}}</view>
+    </view>
+    </view>
+    <view class="tj">
+        <view class="title">
+            相似MV推荐
+        </view>
+
+        <view class="img" wx:for="{{simimvs}}" wx:for-item="item" wx:key="id">
+        <navigator  url="/pages/video/video?mvid={{item.id}}">
+            <image class="image" src="{{item.cover}}" mode="widthFix" />
+        </navigator>
+            <view class="name">             
+            {{item.name}}
+            </view>
+            <view class="artistName">{{item.artistName}}</view>
+            <view class="playcount">播放量：{{item.playCount}}</view>
+        </view>
+          
+        
+    </view>
+      
+</view>
+  

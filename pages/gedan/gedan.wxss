@@ -1,1 +1,98 @@
-/* pages/gedan/gedan.wxss */
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .bkg {
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15rpx;
+  background: rgba(37, 37, 37, 0.7);
+}
+.container .bkg .bg-image {
+  position: absolute;
+  width: 100%;
+  height: 400rpx;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -1;
+}
+.container .bkg .bg-image .bg {
+  width: 100%;
+  height: 400rpx;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  background-size: cover;
+}
+.container .bkg .touxiang {
+  position: absolute;
+  width: 250rpx;
+  height: 200rpx;
+  left: 60rpx;
+  top: 60rpx;
+}
+.container .bkg .touxiang .tx {
+  width: 225rpx;
+  height: 225rpx;
+}
+.container .bkg .title {
+  color: white;
+  position: absolute;
+  font-size: 18px;
+  left: 340rpx;
+  top: 10rpx;
+}
+.container .bkg .jjs {
+  color: white;
+  position: absolute;
+  left: 340rpx;
+  top: 200rpx;
+  width: 350rpx;
+}
+.container .bkg .jjs .js {
+  color: white;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  align-content: center;
+  font-size: 15px;
+}
+.container .qm {
+  margin-top: 100prx;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.container .qm .anniu {
+  height: 25px;
+  border-bottom: 1px solid gray;
+}
+.container .qm .anniu .qb {
+  color: gray;
+  font-size: 16px;
+  background: white;
+  margin-left: 50rpx;
+}
+.container .qm .anniu .qb :hover {
+  color: red;
+}
+.container .qm .anniu .sx {
+  color: gray;
+  font-size: 16px;
+  background: white;
+  margin-left: 400rpx;
+}
+.container .qm .anniu .sx :hover {
+  color: red;
+}
+.container .body .gq {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}

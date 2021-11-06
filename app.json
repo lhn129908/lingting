@@ -5,7 +5,9 @@
     "pages/my/my",
     "pages/sou/sou",
     "pages/video/video",
-    "pages/gedan/gedan"
+    "pages/gedan/gedan",
+   
+    "pages/zhuanji/zhuanji"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -27,12 +29,12 @@
       "text": "首页"
     }, 
     {
-      "iconPath":"",
+     
       "pagePath":"pages/control/control",
       "text":"音乐控制"
     },
     {
-      "iconPath":"",
+      
       "pagePath": "pages/my/my",
       "text": "我的"
     }]

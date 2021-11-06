@@ -1,1 +1,72 @@
-/* pages/video/video.wxss */
+.container .player {
+  color: ghostwhite;
+  position: relative;
+  border-bottom: 1px solid gray;
+}
+.container .player .videoplayer {
+  width: 750rpx;
+}
+.container .player .js {
+  background-color: #f87373;
+  margin-top: -4px;
+  height: 130rpx;
+}
+.container .player .js .name {
+  font-size: 20px;
+  margin-left: 30rpx;
+}
+.container .player .js .artistName {
+  font-size: 15px;
+  margin-top: 15rpx;
+  margin-left: 30rpx;
+}
+.container .player .js .publishTime {
+  margin-top: 10rpx;
+  position: absolute;
+  right: 10px;
+  top: 515rpx;
+  font-size: 13px;
+}
+.container .player .js .playcount {
+  font-size: 12px;
+  position: absolute;
+  top: 460rpx;
+  right: 10px;
+}
+.container .tj {
+  margin-top: 20rpx;
+}
+.container .tj .title {
+  font-size: 40rpx;
+  border-bottom: 1px solid ghostwhite;
+  margin-bottom: 10rpx;
+  margin-left: 20rpx;
+}
+.container .tj .img {
+  color: ghostwhite;
+  position: relative;
+  margin: 20rpx;
+  border: 1px solid gray;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background-color: #f87373;
+}
+.container .tj .img .image {
+  width: 690rpx;
+  border-radius: 20rpx;
+}
+.container .tj .img .name {
+  font-size: 20px;
+  margin-left: 30rpx;
+}
+.container .tj .img .artistName {
+  font-size: 15px;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+}
+.container .tj .img .playcount {
+  font-size: 12px;
+  position: absolute;
+  right: 30rpx;
+  top: 480rpx;
+}

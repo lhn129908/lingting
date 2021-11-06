@@ -1,2 +1,36 @@
-<!--pages/gedan/gedan.wxml-->
-<text>pages/gedan/gedan.wxml</text>
+<view class="container">
+    <view class="bkg">
+     <view class="bg-image" >
+     <image class="bg" src="{{albs.coverImgUrl}}" mode="widthFix"/>
+     </view> 
+        <view class="touxiang">
+        <image class="tx" src="{{albs.coverImgUrl}}" mode="widthFix"  />
+        </view>
+        <text class="title">
+            {{albs.name}}
+        </text>
+        <view class="jjs">
+        <text class="js">
+        {{albs.tags}}
+        </text> 
+        </view>
+       
+       
+    </view>
+    
+        <view class="anniu">
+            <van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" data-value="{{option1.value}}" options="{{ option1 }}"  />
+  
+</van-dropdown-menu>
+        </view>
+
+        <view class="body">
+            <view class="gq" bindtap="qqq" >
+                <van-cell-group  wx:for="{{songs}}" wx:for-item="item" wx:key="id" >
+                    <van-cell   title="{{item.name}}" value="..." label="{{item.ar[0].name}}"  bindtap="dianji" data-id ="{{item.id}}" />
+                </van-cell-group>
+             </view>  
+        
+    </view>  
+</view>

@@ -23,6 +23,36 @@
                     "pathName": "pages/index/index",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "pages/gedan/gedan",
+                    "pathName": "pages/gedan/gedan",
+                    "query": "id=3230514034",
+                    "scene": null
+                },
+                {
+                    "name": "pages/zhuanji/zhuanji",
+                    "pathName": "pages/zhuanji/zhuanji",
+                    "query": "Id=11111",
+                    "scene": null
+                },
+                {
+                    "name": "pages/paihangbang/paihangbang",
+                    "pathName": "pages/paihangbang/paihangbang",
+                    "query": "id=24381616",
+                    "scene": null
+                },
+                {
+                    "name": "pages/control/control",
+                    "pathName": "pages/control/control",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/video/video",
+                    "pathName": "pages/video/video",
+                    "query": "mvid=5436712",
+                    "scene": null
                 }
             ]
         }
