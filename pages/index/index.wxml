@@ -30,7 +30,7 @@
         <view>
             <view class="parent">
                 <view class="title">最新热门MV推荐</view>
-                <view class="more" bindtap="tuimvMore">更多></view>
+                <view class="more" bindtap="mvmore">更多></view>
             </view>
             <view class="tui_mv">
                 <view class="tui_mv_item" wx:for="{{tuimv}}" wx:for-item="item" wx:key="id">
@@ -43,7 +43,7 @@
         <view>
             <view class="parent">
                 <view class="title">推荐新歌</view>
-                <view class="more" bindtap="newMore">更多></view>
+                <view class="more" bindtap="danMore">更多></view>
             </view>
             <view class="new_songs" wx:for="{{new}}" wx:for-item="item" wx:key="id">
                 <view class="new_songs_image">
@@ -79,7 +79,7 @@
     <!-- ***************视频***************** -->
     <van-tab title="MV">
         <view class="mv">
-            <view class="mv_content" wx:for="{{allmv}}" wx:for-item="item" wx:key="id">
+            <view class="mv_content" wx:for="{{allmv}}" wx:for-item="item" wx:key="id" >
                 <view class="mv_image">
                     <image class="mv_imge_big" src="{{item.cover}}"></image>
                     <view class="mv_imge_zhe"></view>

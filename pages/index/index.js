@@ -58,6 +58,11 @@ Page({
     wx.navigateTo({
       url: "/pages/danmore/danmore"
     })
+  },
+  mvmore() {
+    wx.navigateTo({
+      url: "/pages/mvmore/mvmore"
+    })
   }
 
 })

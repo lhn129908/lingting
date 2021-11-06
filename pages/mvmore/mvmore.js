@@ -33,6 +33,13 @@ Page({
     onLoad: function (options) {
 
     },
+    xuan1(e){
+      console.log(e)
+    },
+    xuan2(e){
+      console.log(e)
+    },
+
     async getMvData(){
         const result=requestGet("http://101.35.3.52/mv/all?area="+""+"&type="+"");
         

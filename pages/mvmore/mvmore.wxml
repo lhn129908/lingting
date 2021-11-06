@@ -1,17 +1,17 @@
 <van-dropdown-menu active-color="#f87373">
-  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
-  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+    <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" catchtap="xuan1" />
+    <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" catchtap="xuan2" />
 </van-dropdown-menu>
 <view class="mv">
-            <view class="mv_content" wx:for="{{allmv}}" wx:for-item="item" wx:key="id">
-                <view class="mv_image">
-                    <image class="mv_imge_big" src="{{item.cover}}"></image>
-                    <view class="mv_imge_zhe"></view>
-                    <image class="mv_imge_small" src="{{item.cover}}"></image>
-                </view>
-                <view class="mv_text">
-                    <view class="mv_text_title">{{item.name}}</view>
-                    <view class="mv_text_name">{{item.artistName}}</view>
-                </view>
-            </view>
+    <view class="mv_content" wx:for="{{allmv}}" wx:for-item="item" wx:key="id">
+        <view class="mv_image">
+            <image class="mv_imge_big" src="{{item.cover}}"></image>
+            <view class="mv_imge_zhe"></view>
+            <image class="mv_imge_small" src="{{item.cover}}"></image>
         </view>
+        <view class="mv_text">
+            <view class="mv_text_title">{{item.name}}</view>
+            <view class="mv_text_name">{{item.artistName}}</view>
+        </view>
+    </view>
+</view>
