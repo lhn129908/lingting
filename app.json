@@ -1,5 +1,5 @@
 {
-  "pages": [
+  "pages":[
     "pages/index/index",
     "pages/control/control",
     "pages/my/my",
@@ -7,18 +7,36 @@
     "pages/video/video",
     "pages/gedan/gedan"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
+  "window":{
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#f87373",
-    "backgroundColor": "#fa9d9d",
+    "backgroundColor":"#fa9d9d",
     "navigationBarTitleText": "聆听音乐",
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true
   },
-  "requiredBackgroundModes": [
-    "audio",
-    "requiredBackgroundModes"
-  ],
+  "tabBar": {
+    "color":"#ffffff",
+    "selectedColor":"#cccccc",
+    "backgroundColor":"#f87373",
+    "borderStyle":"white",
+    "list": [{
+      "iconPath":"pages/public/icofont/home.png",
+      "selectedIconPath": "pages/public/icofont/home.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, 
+    {
+      "iconPath":"",
+      "pagePath":"pages/control/control",
+      "text":"音乐控制"
+    },
+    {
+      "iconPath":"",
+      "pagePath": "pages/my/my",
+      "text": "我的"
+    }]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

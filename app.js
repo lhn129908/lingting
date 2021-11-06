@@ -1,14 +1,9 @@
 // app.js
 App({
-  async onLaunch() {
-
+  onLaunch() {
+    
   },
   globalData: {
-    userInfo: null,
-    value:1,
-    Id:"",
-    autoplay:true,
-
-  },
-
+    userInfo: null
+  }
 })
