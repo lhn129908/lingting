@@ -17,7 +17,7 @@
         <view>
             <view class="parent">
                 <view class="title">推荐歌单</view>
-                <view class="more" bindtap="more">更多></view>
+                <view class="more" bindtap="danMore">更多></view>
             </view>
             <van-grid column-num="3" border="{{ true }}" gutter="{{ 8 }}">
                 <van-grid-item use-slot wx:for="{{dan}}" wx:for-item="item" wx:key="id" bindtap="gedan" data-gedanid="{{item.id}}">
@@ -30,7 +30,7 @@
         <view>
             <view class="parent">
                 <view class="title">最新热门MV推荐</view>
-                <view class="more" bindtap="more">更多></view>
+                <view class="more" bindtap="tuimvMore">更多></view>
             </view>
             <view class="tui_mv">
                 <view class="tui_mv_item" wx:for="{{tuimv}}" wx:for-item="item" wx:key="id">
@@ -43,7 +43,7 @@
         <view>
             <view class="parent">
                 <view class="title">推荐新歌</view>
-                <view class="more" bindtap="more">更多></view>
+                <view class="more" bindtap="newMore">更多></view>
             </view>
             <view class="new_songs" wx:for="{{new}}" wx:for-item="item" wx:key="id">
                 <view class="new_songs_image">
@@ -91,14 +91,14 @@
                 </view>
             </view>
         </view>
-        <view class="more_mv" bindtap="more">到底了，点击查看更多~~~</view>
+        <view class="more_mv" bindtap="mvmore">到底了，点击查看更多~~~</view>
     </van-tab>
     <!-- ***************电台***************** -->
-    <van-tab title="电台">
+    <!-- <van-tab title="电台">
         <van-tabs active="{{ active }}">
             <van-tab title="标签 1">内容 1</van-tab>
         </van-tabs>
-    </van-tab>
+    </van-tab> -->
 </van-tabs>
 <!-- 防止遮挡 -->
 <view style="width: 100%;height: 200rpx;"></view>

@@ -1,0 +1,10 @@
+<van-tabs active="{{ active }}" bind:change="onChange" title-active-color="#f87373" color="#f87373">
+    <van-tab wx:for="{{danfen}}" wx:for-item="item" wx:key="id" title="{{item.name}}">
+    </van-tab>
+</van-tabs>
+<van-grid column-num="3" border="{{ true }}" gutter="{{ 8 }}">
+    <van-grid-item use-slot wx:for="{{dan}}" wx:for-item="item" wx:key="id" bindtap="gedan" data-id="{{item.id}}">
+        <image style="width:100%;height:180rpx" src="{{item.coverImgUrl}}" />
+       <view> {{item.name}}</view>
+    </van-grid-item>
+</van-grid>

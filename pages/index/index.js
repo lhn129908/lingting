@@ -54,9 +54,9 @@ Page({
       url: "/pages/gedan/gedan"
     })
   },
-  more() {
+  danMore() {
     wx.navigateTo({
-      url: "/pages/more/more"
+      url: "/pages/danmore/danmore"
     })
   }
 

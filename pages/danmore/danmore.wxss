@@ -1,0 +1,17 @@
+.van-grid-item {
+  height: 300rpx;
+  font-size: 11px;
+  color: #6b6b6b;
+  text-align: center;
+}
+.van-grid-item iamge {
+  overflow: hidden;
+}
+.van-grid-item view {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* 指定显示文本的行数 */
+  overflow: hidden;
+  /* 超出隐藏 */
+}

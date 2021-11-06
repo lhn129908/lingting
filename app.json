@@ -6,7 +6,8 @@
     "pages/sou/sou",
     "pages/video/video",
     "pages/gedan/gedan",
-    "pages/more/more"
+    "pages/danmore/danmore",
+    "pages/mvmore/mvmore"
   ],
   "window": {
     "backgroundTextStyle": "light",

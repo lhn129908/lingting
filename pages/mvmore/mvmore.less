@@ -1,0 +1,65 @@
+.mv {
+    width     : 100%;
+    margin-top: 30rpx;
+
+    .mv_content {
+        display   : inline-block;
+        width     : 33.33%;
+        height    : 260rpx;
+        box-sizing: border-box;
+        overflow  : hidden;
+
+        .mv_image {
+            position   : relative;
+            width      : 90%;
+            margin-left: 5%;
+            height     : 170rpx;
+            border     : 1rpx solid #cccccc;
+
+            .mv_imge_big {
+                position: absolute;
+                width   : 100%;
+                height  : 170rpx;
+            }
+            .mv_imge_zhe{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #dddddd93;
+            }
+            .mv_imge_small {
+                position        : absolute;
+                width           : 80%;
+                height          : 80%;
+                margin: 8% 10%;
+                border-radius: 10rpx;
+                border: 1px solid white;
+            }
+
+
+        }
+
+        .mv_text {
+            margin-left: 20rpx;
+
+            .mv_text_title {
+                width             : 100%;
+                font-size         : 12px;
+                display           : -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                /* 指定显示文本的行数 */
+                overflow          : hidden;
+                /* 超出隐藏 */
+
+            }
+
+            .mv_text_name {
+                font-size: 10px;
+                color    : #cac7c7;
+            }
+        }
+
+    }
+
+}
