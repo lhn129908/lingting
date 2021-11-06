@@ -1,0 +1,86 @@
+.search-s .search-back {
+  margin: 1rem 2rem 1rem 0.8rem;
+  height: 60rpx;
+  display: flex;
+}
+.search-s .search-back .search-left {
+  flex: 1;
+  size: 50px;
+}
+.search-s .search-back .search-kuang {
+  margin-left: 0.5rem;
+  display: flex;
+  flex: 8;
+  background-color: #e79c9c;
+  height: 60rpx;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+}
+.search-s .search-back .search-kuang icon {
+  flex: 1;
+  margin-top: 10rpx;
+}
+.search-s .search-back .search-kuang input {
+  flex: 6;
+  margin-top: 7rpx;
+}
+.search-s .search-back .search-kuang van-icon {
+  flex: 1;
+}
+.search-s .zhuanji .zhuanji1 {
+  margin: 1.5rem 2rem 1rem 1.5rem;
+  display: flex;
+}
+.search-s .zhuanji .zhuanji1 .zhuan-image {
+  flex: 2;
+  border-radius: 20rpx ;
+}
+.search-s .zhuanji .zhuanji1 .zhuan-name {
+  flex: 8;
+  margin-left: 1rem;
+}
+.search-s .zhuanji .zhuanji1 .zhuan-name :nth-child(1) {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.search-s .zhuanji .zhuanji1 .zhuan-name :nth-child(2) {
+  margin-top: 1rem;
+  font-size: 0.5rem;
+  color: #e79c9c;
+}
+.search-s .geshou .geshou1 {
+  margin: 2rem 4rem 1rem 3rem;
+  border-bottom: 0.001rem dashed #9c9191;
+  display: flex;
+  justify-content: space-between;
+}
+.search-s .geshou .geshou1 .geshou-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.973rem;
+  margin-bottom: 1rem;
+}
+.search-s .geshou .geshou1 .geshuo-name {
+  margin-top: 0.5rem;
+}
+.search-s .geshou .geshou1 .normal {
+  font-size: 0.5rem;
+  border: 0.5rpx solid #e79c9c;
+  height: 1.5rem;
+  width: 3rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: #e79c9c;
+  margin-top: 0.5rem;
+}
+.search-s .geshou .geshou1 .is_checked {
+  font-size: 0.5rem;
+  border: 0.5rpx solid #888686;
+  height: 1.5rem;
+  width: 3.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: #888686;
+  margin-top: 0.5rem;
+}

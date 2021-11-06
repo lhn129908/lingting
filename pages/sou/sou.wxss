@@ -1,1 +1,65 @@
-/* pages/sou/sou.wxss */
+.hide {
+  display: none;
+}
+.search .search-kuang {
+  display: flex;
+  border: 0.0125rem solid #f87373;
+  margin: 0.5rem 2rem 0 2rem;
+  height: 60rpx;
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+  line-height: 60rpx;
+}
+.search .search-kuang input {
+  flex: 5;
+  margin-left: 2rem;
+  margin-top: 0.25rem;
+}
+.search .search-kuang .button {
+  flex: 1;
+  background-color: #f87373;
+  border-radius: 0rpx 30rpx 30rpx 0rpx;
+}
+.search .search-kuang .input-placeholder {
+  font-size: 16px;
+  color: #dddddd;
+  font-style: italic;
+}
+.search .search-name {
+  margin: 1.5rem 0 0.8rem 1.5rem;
+  font-size: large;
+  color: #f87373;
+}
+.search .scroll-view .msg-item {
+  display: flex;
+  margin: 0 2rem 0.8rem 1.5rem;
+}
+.search .scroll-view .msg-item .search-bar_icon {
+  margin-right: 0.5rem;
+}
+.search .scroll-view .msg-item .user-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search .scroll-view .msg-item .user-title {
+  font-style: italic;
+  color: #5f90bd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search .recommend {
+  display: flex;
+  margin: 1.5rem 0 0.8rem 1.5rem;
+}
+.search .recommend :nth-child(1) {
+  font-size: large;
+  flex: 3;
+}
+.search .recommend :nth-child(2) {
+  flex: 1;
+  color: dimgrey;
+}
+.search .search-music {
+  margin: 0 0 0.8rem 1.5rem;
+}

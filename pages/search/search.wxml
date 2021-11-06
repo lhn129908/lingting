@@ -1,0 +1,50 @@
+<view class="search-s">
+  <!-- 搜索框 -->
+  <view class="search-back">
+    <van-icon name="arrow-left" class="arrow-left" size="30px" color="#aaa" />
+    <view class="search-kuang">
+      <icon class="search-bar_icon" type="search" size="20"></icon>
+      <input type="text" placeholder="请输入查询信息" />
+      <van-icon name="cross" class="cross" />
+    </view>
+  </view>
+  <!-- 选择 -->
+  <van-tabs active="{{ active }}" bind:click="onClick">
+    <!-- 单曲 -->
+    <van-tab title="单曲" bindtap="clickDan" class="danqu">
+      <van-cell-group inset>
+        <view wx:for="{{key.songs}}" wx:for-item="item" wx:key="id">
+          <van-cell title="{{item.name}}" is-link label="{{item.artists[0].name}}" />
+        </view>
+      </van-cell-group>
+    </van-tab>
+    <!-- 专辑 -->
+    <van-tab title="专辑" bindtap="clickZhuan" class="zhuanji">
+      <view wx:for="{{key.albums}}" wx:for-item="item" wx:key="id" class="zhuanji1">
+        <image class="zhuan-image" src="{{item.picUrl}}" mode="widthFix" lazy-load="false"></image>
+        <view class="zhuan-name">
+          <view>{{item.name}}</view>
+          <view>作者：{{item.artist.name}}</view>
+        </view>
+      </view>
+    </van-tab>
+    <!-- 歌手 -->
+    <van-notify id="van-notify" />
+    <van-tab title="歌手" bindtap="clickShou" class="geshou">
+      <view wx:for="{{key.artists}}" wx:for-item="item" wx:key="id" class="geshou1">
+        <image class="geshou-img" src="{{item.img1v1Url}}" mode="widthFix" lazy-load="false"></image>
+        <view class="geshou-name">{{item.name}}</view>
+        <view bindtap="serviceSelection" class="{{isChecked?'is_checked':'normal'}}" id="{{index}}">
+          {{guanZhu}}
+        </view>
+      </view>
+    </van-tab>
+    <!-- 歌单 -->
+    <!-- <van-tab title="歌单" bindtap="clickDan">内容 4</van-tab>
+    <van-tab title="用户" bindtap="clickYong">内容 5</van-tab>
+    <van-tab title="MV" bindtap="clickMv">内容 6</van-tab>
+    <van-tab title="歌词" bindtap="clickCi">内容 6</van-tab>
+    <van-tab title="电台" bindtap="clickDian">内容 6</van-tab>
+    <van-tab title="视频" bindtap="clickShi">内容 6</van-tab> -->
+  </van-tabs>
+</view>

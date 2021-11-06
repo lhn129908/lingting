@@ -1,2 +1,27 @@
-<!--pages/sou/sou.wxml-->
-<text>search</text>
+<view class="search">
+  <!-- 搜索框 -->
+  <view class="search-kuang">
+    <input type="text" confirm-type="search" placeholder="请输入歌手或歌曲名" placeholder-class="input-placeholder" bindinput="inputTyping" value="{{inputVal}}" />
+      <view class="button" bindtap = "clickSearch">搜索</view>
+  </view>
+  <!-- 模糊搜索后的歌名 -->
+  <view class="search-name {{viewShowed?'':'hide'}}">搜索：{{inputVal}}</view>
+  <scroll-view class='scroll-view' wx:if='{{viewShowed}}' scroll-y>
+    <view wx:for="{{list}}" wx:for-item="item" wx:key="id" class="msg-item " bindtap="clickOn" data-index="{{item.name}}">
+      <icon class="search-bar_icon" type="search" size="20"></icon>
+      <view class='user-name'>{{item.name}}--</view>
+      <view class="user-title">{{item.artists[0].name}}</view>
+    </view>
+  </scroll-view>
+  <!-- 热搜歌名 -->
+  <view class="{{viewShowed?'hide':''}}">
+    <view class="recommend">
+      <view>热门搜索</view>
+      <view>更多></view>
+    </view>
+    <view class="search-music" wx:for="{{slides}}" wx:for-item="item" wx:key="id" data-index="{{item.first}}" bindtap="click">
+      <icon class="search-bar_icon" type="search" size="20"></icon>
+      {{item.first}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+
+// 公共样式
+.hide {
+  display: none;
+}
+
+.search {
+  // 搜索框样式
+  .search-kuang {
+    display: flex;
+    border: 0.0125rem solid #f87373;
+    margin: 0.5rem 2rem 0 2rem;
+    height: 60rpx;
+    border-radius: 30rpx 30rpx 30rpx 30rpx;
+    line-height: 60rpx;
+    input {
+      flex: 5;
+      margin-left: 2rem;
+      margin-top: 0.25rem;
+    }
+    .button {
+      flex: 1;
+      background-color: #f87373;
+      border-radius: 0rpx 30rpx 30rpx 0rpx;
+    }
+    .input-placeholder {
+      font-size: 16px;
+      color: #dddddd;
+      font-style: italic;
+    }
+  }
+
+
+  //模糊搜索后的歌名
+  .search-name {
+    margin: 1.5rem 0 0.8rem 1.5rem;
+    font-size: large;
+    color: #f87373;
+  }
+  .scroll-view {
+    .msg-item {
+      display: flex;
+      margin: 0 2rem 0.8rem 1.5rem;
+      .search-bar_icon {
+        margin-right: 0.5rem;
+      }
+      .user-name{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .user-title {
+        font-style: italic;
+        color: rgb(95, 144, 189);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  // 热搜歌名样式
+  .recommend {
+    display: flex;
+    margin: 1.5rem 0 0.8rem 1.5rem;
+    :nth-child(1) {
+      font-size: large;
+      flex: 3;
+    }
+    :nth-child(2) {
+      flex: 1;
+      color: dimgrey;
+    }
+  }
+  .search-music {
+    margin: 0 0 0.8rem 1.5rem;
+  }
+}

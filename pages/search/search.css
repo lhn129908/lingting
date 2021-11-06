@@ -1,0 +1,11 @@
+.search-s .search-back {
+  background-color: red;
+  display: flex;
+}
+.search-s .search-back .search-left {
+  flex: 1;
+}
+.search-s .search-back .search-kuang {
+  display: flex;
+  flex: 7;
+}

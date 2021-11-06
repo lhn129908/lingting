@@ -1,0 +1,104 @@
+.search-s {
+
+  // 搜索框样式
+  .search-back {
+    margin: 1rem 2rem 1rem 0.8rem;
+    height: 60rpx;
+    
+    display: flex;
+    .search-left {
+      flex: 1;
+    size: 50px;
+    }
+    .search-kuang {
+      margin-left: 0.5rem;
+      display: flex;
+      flex: 8;
+      // border: red 1px solid;
+      background-color: #e79c9c;
+      height: 60rpx;
+      border-radius: 20rpx 20rpx 20rpx 20rpx;
+      icon{
+        flex: 1;
+        margin-top: 10rpx;
+      }
+      input{
+        flex: 6;
+        margin-top: 7rpx;
+      }
+      van-icon{
+        flex: 1;
+      }
+    }
+  }
+  
+  // 专辑
+  .zhuanji{
+    .zhuanji1{
+      margin: 1.5rem 2rem 1rem 1.5rem;
+      display: flex;
+      // border:0.5rpx solid red;
+      .zhuan-image{
+        flex: 2;
+        border-radius: 20rpx ;     
+      }
+      .zhuan-name{
+        flex:8;
+        margin-left: 1rem;
+        :nth-child(1){
+          font-size: 0.9rem;
+          margin-top: 0.5rem;
+        }
+        :nth-child(2){
+          margin-top: 1rem;
+          font-size: 0.5rem;
+          color: #e79c9c;
+        }
+      }
+      
+    }
+  }
+
+  .geshou{
+    .geshou1{
+      margin: 2rem 4rem 1rem 3rem;
+      border-bottom: .001rem dashed rgb(156, 145, 145);
+      display: flex;
+      justify-content:space-between;
+      .geshou-img{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1.973rem; 
+        margin-bottom: 1rem;
+
+      }
+      .geshuo-name{
+        margin-top: 0.5rem;
+      }
+      .normal{
+        font-size: 0.5rem;
+        border: 0.5rpx solid #e79c9c;
+        height: 1.5rem;
+        width: 3rem;
+        line-height: 1.5rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        color: #e79c9c;
+        margin-top: 0.5rem;
+      }
+      .is_checked{
+        font-size: 0.5rem;
+        border: 0.5rpx solid #888686;
+        height: 1.5rem;
+        width: 3.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        color: #888686;
+        margin-top: 0.5rem;
+      }
+    }
+
+  }
+
+}

@@ -1,30 +1,66 @@
 {
-    "setting": {},
-    "condition": {
-        "plugin": {
-            "list": []
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/logs/logs",
+          "pathName": "pages/logs/logs",
+          "query": "",
+          "scene": null
         },
-        "game": {
-            "list": []
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
         },
-        "gamePlugin": {
-            "list": []
+        {
+          "name": "pages/sou/sou",
+          "pathName": "pages/sou/sou",
+          "query": "",
+          "scene": null
         },
-        "miniprogram": {
-            "list": [
-                {
-                    "name": "pages/logs/logs",
-                    "pathName": "pages/logs/logs",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/index/index",
-                    "pathName": "pages/index/index",
-                    "query": "",
-                    "scene": null
-                }
-            ]
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "name=漠河",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "name=路过人间",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "id=1430319727",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "keywords=海阔天空",
+          "scene": null
         }
+      ]
     }
+  }
 }

@@ -5,7 +5,9 @@
     "pages/my/my",
     "pages/sou/sou",
     "pages/video/video",
-    "pages/gedan/gedan"
+    "pages/gedan/gedan",
+    "pages/search/search"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

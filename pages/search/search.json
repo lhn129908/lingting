@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-cell": "../../components/vant/cell/index",
+  "van-cell-group": "../../components/vant/cell-group/index",
+  "van-tab": "../../components/vant/tab/index",
+  "van-tabs": "../../components/vant/tabs/index",
+  "van-search": "../../components/vant/search/index",
+  "van-tabbar": "../../components/vant/tabbar/index",
+  "van-tabbar-item": "../../components/vant/tabbar-item/index",
+  "van-icon": "../../components/vant/icon/index",
+  "van-notify": "../../components/vant/notify/index"
+  }
+}
