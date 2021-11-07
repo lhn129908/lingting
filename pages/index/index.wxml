@@ -33,7 +33,7 @@
                 <view class="more" bindtap="mvmore">更多></view>
             </view>
             <view class="tui_mv">
-                <view class="tui_mv_item" wx:for="{{tuimv}}" wx:for-item="item" wx:key="id">
+                <view class="tui_mv_item" wx:for="{{tuimv}}" wx:for-item="item" wx:key="id" bindtap="mvid" data-mvid="{{item.id}}">
                     <image src=" {{item.picUrl}}"></image>
                     <view class="tui_mv_text">{{item.name}}</view>
                 </view>
@@ -45,7 +45,7 @@
                 <view class="title">推荐新歌</view>
                 <view class="more" bindtap="danMore">更多></view>
             </view>
-            <view class="new_songs" wx:for="{{new}}" wx:for-item="item" wx:key="id">
+            <view class="new_songs" wx:for="{{new}}" wx:for-item="item" wx:key="id" bindtap="newsong" data-songid="{{item.id}}"data-picurl="{{item.picUrl}}">
                 <view class="new_songs_image">
                     <image src="{{item.picUrl}}"></image>
                 </view>
@@ -64,7 +64,7 @@
     </van-tab>
     <!-- ***************排行榜***************** -->
     <van-tab title="排行榜">
-        <view class="pai_hang" wx:for="{{bang}}" wx:for-item="item" wx:key="id">
+        <view class="pai_hang" wx:for="{{bang}}" wx:for-item="item" wx:key="id" data-paiid="{{item.id}}" bindtap="paiid">
             <view class="pai_hang_image">
                 <image src="{{item.coverImgUrl}}"></image>
             </view>
@@ -79,7 +79,7 @@
     <!-- ***************视频***************** -->
     <van-tab title="MV">
         <view class="mv">
-            <view class="mv_content" wx:for="{{allmv}}" wx:for-item="item" wx:key="id" >
+            <view class="mv_content" wx:for="{{allmv}}" wx:for-item="item" wx:key="id" bindtap="mvid" data-mvid="{{item.id}}">
                 <view class="mv_image">
                     <image class="mv_imge_big" src="{{item.cover}}"></image>
                     <view class="mv_imge_zhe"></view>

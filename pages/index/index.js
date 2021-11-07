@@ -63,6 +63,19 @@ Page({
     wx.navigateTo({
       url: "/pages/mvmore/mvmore"
     })
+  },
+  newsong(e){
+    console.log(e.currentTarget.dataset.songid);
+    app.globalData.songid=e.currentTarget.dataset.songid;
+    app.globalData.picurl=e.currentTarget.dataset.picurl
+    console.log(app.globalData.songid,app.globalData.picurl);
+  },
+  mvid(e){
+    console.log(e.currentTarget.dataset.mvid);
+  },
+  paiid(e){
+    console.log(e.currentTarget.dataset.paiid);
+    app.globalData.paiid=e.currentTarget.dataset.paiid;
+    console.log(app.globalData.paiid);
   }
-
 })

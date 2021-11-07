@@ -23,8 +23,8 @@ Component({
       {
         "url": "/pages/control/control",
         "text": "",
-        "normal": '',
-        "active": '',
+        "normal": app.globalData.picurl,
+        "active": app.globalData.picurl,
       },
       {
         "url": "/pages/my/my",
@@ -35,10 +35,10 @@ Component({
     ]
 
   },
-  onShow: function () {
-    console.log('个人中心')
-    this.getTabBar().init();
-  },
+  // onShow: function () {
+  //   console.log('个人中心')
+  //   this.methods().init();
+  // },
 
   methods: {
     onChange(event) {

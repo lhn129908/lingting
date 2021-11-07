@@ -5,11 +5,13 @@
     background-color: #fa7e7e;
 }
 .tabitem:nth-child(2){
-    /* background-image: url(); */
     flex: 0.8;
     border-radius: 50%;
     position: relative;
     bottom: 115rpx;
     height: 214rpx;
     z-index: 2;
+    position: relative;
+    /* margin-left: -30rpx; */
+    animation: box-ani 4s  infinite linear;
 }
