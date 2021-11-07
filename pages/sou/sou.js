@@ -80,6 +80,7 @@ Page({
 
   click(e){
     console.log(e.currentTarget.dataset.index)
+    console.log(e)
     app.globalData.reData=e.currentTarget.dataset.index
     app.globalData.i = 1
     wx.redirectTo({

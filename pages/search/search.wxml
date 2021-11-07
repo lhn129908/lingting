@@ -31,11 +31,16 @@
     <!-- 歌手 -->
     <van-notify id="van-notify" />
     <van-tab title="歌手" bindtap="clickShou" class="geshou">
-      <view wx:for="{{key.artists}}" wx:for-item="item" wx:key="id" class="geshou1">
+      <view wx:for="{{key.artists}}" wx:for-item="item" wx:key="id" class="geshou1" wx:for-index="index">
         <image class="geshou-img" src="{{item.img1v1Url}}" mode="widthFix" lazy-load="false"></image>
         <view class="geshou-name">{{item.name}}</view>
-        <view bindtap="serviceSelection" class="{{isChecked?'is_checked':'normal'}}" id="{{index}}">
-          {{guanZhu}}
+        <view  bindtap="serviceSelection" class="{{clickIndex == index & isChecked ?'is_checked':'normal'}}" data-index="{{ index }}">
+          <block wx:if="{{clickIndex == index &isChecked}}">
+           √已关注
+          </block>
+          <block wx:else>
+            +关注
+          </block>
         </view>
       </view>
     </van-tab>

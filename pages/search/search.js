@@ -8,8 +8,9 @@ Page({
     key: "",
     oneself:1,
     isChecked:false,
-    guanZhu:"+关注",
-    index:null
+    // guanZhu:"+关注",
+    index:null,
+    clickIndex: null
   },
 
   // 搜索结果页面
@@ -99,18 +100,20 @@ onClick(e){
     
 
   serviceSelection(e){
-    console.log(e.currentTarget.id);
+    console.log(e.currentTarget.dataset.index);
     console.log(e);
-    // var idx= e.currentTarget.id;
-    if(this.data.isChecked==false){
+    this.setData({
+      clickIndex: e.currentTarget.dataset.index
+    })
+    if( this.data.isChecked==false){
       this.setData({
-        guanZhu:'√已关注',
+        // guanZhu:'√已关注',
         isChecked:true,
       });
       Notify({ type: 'success', message: '您已关注成功！' });
     }else{
       this.setData({
-        guanZhu:'+关注',
+        // guanZhu:'+关注',
         isChecked:false,
       });
       Notify({ type: 'warning', message: '您已取消关注！' });
