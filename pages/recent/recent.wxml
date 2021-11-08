@@ -1,0 +1,18 @@
+<scroll-view scroll-y enable-back-to-top style="height:{{ scrollHeight }}px" >
+    <view>
+ <block wx:for="{{ list }}" wx:for-item="item" wx:for-index="index" wx:key="index" >
+<view class="list {{ item.isTouchMove ? 'touch-move-active' : '' }}" bindtouchstart="touchStart" bindtouchmove="touchMove" data-index="{{ index }}" >
+<view class="txt">
+ <van-cell-group>
+ <van-cell url="/pages/指向歌曲播放页面{{item.id}}" center  title=" {{ item.title }} " value="."   label="{{item.geshou}} " border="{{ false }}" />
+<image catchtap='onMusicTap' class='zimg' src="{{isPlayingMusic?'../../images/zanting.jpg':'../../images/bofan.jpg'}}"></image>
+</van-cell-group></view>
+<view class="del" data-id="{{item.list.id}}" bindtap="delList" data-index="{{ index }}" >删除 </view>
+ <view data-id="{{item.id}}"  bindtap="haveSave" data-index="{{ index }}" catchtap="haveSave"><image class="save "    src="{{isClick?'../../images/hongxin.jpg':'../../images/baixin.jpg'}}" ></image></view>
+            </view>
+        </block>
+    </view>
+</scroll-view>
+
+
+

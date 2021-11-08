@@ -1,0 +1,11 @@
+{
+  
+  "navigationBarTitleText": "我喜欢",
+  "usingComponents": {
+    "van-cell": "../../components/vant/cell/index",
+    "van-swipe-cell": "../../components/vant/swipe-cell/index",
+    "van-dropdown-menu": "../../components/vant/dropdown-menu/index",
+    "van-dropdown-item": "../../components/vant/dropdown-item/index",
+    "van-icon": "../../components/vant/icon/index"
+  }
+}

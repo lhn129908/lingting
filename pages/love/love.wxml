@@ -1,0 +1,35 @@
+
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>单曲</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>MV</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>歌单</view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+
+
+
+ <van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+</van-dropdown-menu>
+
+
+                               <swiper-item><view class='swiper_con'>
+  <van-swipe-cell right-width="{{ 80 }}">
+  <van-cell-group>
+    <van-cell title="单元格" value="内容" />
+  </van-cell-group>
+  <view slot="right" class="shanchu">删除</view>
+  </van-swipe-cell>
+
+  <van-swipe-cell right-width="{{ 80 }}">
+  <van-cell-group>
+    <van-cell title="单元格" value="内容" />
+  </van-cell-group>
+  <view slot="right" class="shanchu">删除
+    <image class="save "  bindtap="haveSave" src="{{isClick?'../../images/hongxin.jpg':'../../images/baixin.jpg'}}" ></image></view>
+  </van-swipe-cell>
+                                                  </view></swiper-item> 
+  <swiper-item><view class='swiper_con'>我喜爱的MV</view></swiper-item>
+  <swiper-item><view class='swiper_con'>我喜爱的歌单 </view></swiper-item>  
+</swiper>

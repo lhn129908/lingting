@@ -1,0 +1,29 @@
+/* pages/recents/recents.wxss *//* pages/shoucang/shoucang.wxss *//* 幻灯片部分 */
+swiper{
+  height: 400rpx;
+  width: 100%;
+}
+swiper image{
+  height: 100%;
+  width: 100%;
+}
+/*新闻列表*/
+.news-list{
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+.news-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ccc;
+}
+.news-item image{
+  height: 120rpx;
+  width: 150rpx;
+  margin: 10rpx;
+}
+.news-item text{
+  width: 100%;
+  line-height: 34rpx;
+  font-size: 32rpx;
+}

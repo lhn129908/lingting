@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "最近播放",
+  "usingComponents": {
+    "van-cell": "../../components/vant/cell/index",
+    "van-cell-group": "../../components/vant/cell-group/index"
+  }
+}

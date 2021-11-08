@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "van-cell": "../../components/vant/cell/index",
+    "van-cell-group": "../../components/vant/cell-group/index",
+    "van-swipe-cell": "../../components/vant/swipe-cell/index",
+    "van-popup": "../../components/vant/popup/index"
+  }
 }

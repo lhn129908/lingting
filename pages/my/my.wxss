@@ -1,1 +1,49 @@
-/* pages/my/my.wxss */
+/*登录页面*/
+.mylogin{
+  height: 400rpx;
+  background-color: #f87373;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.mylogin image{
+  height: 220rpx;
+  width: 220rpx;
+  border-radius: 50%;
+}
+.mylogin text{
+  color: white;
+}
+.button{
+  font-size: 36rpx;
+}
+/* 收藏列表 */
+.myFavorite{
+  padding: 20rpx;
+}
+.mytext{
+  margin-left: 34rpx;
+  font-size: 34rpx;
+}
+
+/*新闻列表*/
+.news-list{
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+.news-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ccc;
+}
+.news-item image{
+  height: 120rpx;
+  width: 150rpx;
+  margin: 10rpx;
+}
+.news-item text{
+  width: 100%;
+  line-height: 34rpx;
+  font-size: 32rpx;
+}

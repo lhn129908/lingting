@@ -1,0 +1,10 @@
+<view>
+  <view class="title">{{article.title}}</view>
+  <view class="poster">
+    <image src="{{article.poster}}"></image>
+  </view>
+  <view class="content"><text>{{article.content}}</text></view>
+  <view class="add_date">{{article.add_date}}</view>
+  <button wx:if = '{{isAdd}}' plain bindtap="cancelFavorites">♥</button>
+  <button wx:else plain bindtap="addFavorites">♡</button>
+</view>

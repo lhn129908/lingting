@@ -1,0 +1,13 @@
+<!-- 最近新闻，点击收藏至我的收藏-->
+<view class="myFavoite">
+	<view>
+		<view class="news-list">
+			<view class="news-item" wx:for="{{newsList}}" wx:key="{{item.id}}">
+				<image src="{{item.poster}}"></image>
+				<text bindtap="goToDetail" data-id="{{item.id}}">
+					{{item.title}}----{{item.add_date}}
+				</text>
+			</view>
+		</view>
+	</view>
+</view>

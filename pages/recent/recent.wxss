@@ -1,0 +1,52 @@
+/* pages/recent/recent.wxss */
+/* 列表 */
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+/* 列表内容 */
+.list .txt {
+  flex-grow: 1;
+  width: 100%;
+  margin-left: -300rpx;
+  background-color: #fff;
+}
+/* 删除按钮 */
+.list .del {
+  flex-grow: 0;
+  width: 90rpx;
+  color:	#FF2D2D ;
+  background-color:  	#84C1FF;
+}
+
+.list .txt, .list .del {
+  transform: translateX(150rpx);
+  transition: all 0.4s;
+}
+.touch-move-active .txt,.touch-move-active .del {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.save{
+  width: 60rpx;
+  height: 60rpx;
+}
+.re001{
+  width: 100%;
+  height: 120rpx;
+  /* background-color: #84C1FF; */
+
+}
+.zimg{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 32rpx;
+  right: 10rpx;
+}

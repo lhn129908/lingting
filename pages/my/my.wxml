@@ -1,3 +1,45 @@
-<view class="" >
-    我的
+<!-- 登录页面 刷新即退出-->
+<view class="mylogin">
+	<block wx:if="{{isLogin}}">
+		<image src="{{src}}"></image>
+		<text>{{nickName}}</text>
+	</block >
+	<button class="button" wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo">未登录，点此登录</button>
+</view>
+
+<view class="danyuange">
+  <van-cell
+  is-link
+  title="最近播放"
+  link-type="navigateTo"
+  url="/pages/recent/recent"
+/>
+<van-cell
+  is-link
+  title="最近播放演示"
+  link-type="navigateTo"
+  url="/pages/recents/recents"
+/>
+<van-cell
+  is-link
+  title="我喜欢"
+  link-type="navigateTo"
+  url="/pages/love/love"
+/>
+
+</view>
+
+<!-- 收藏列表 -->
+<view class="myFavoite">
+	<text class="mytext">我的收藏({{number}})</text>
+	<view>
+		<view class="news-list">
+			<view class="news-item" wx:for="{{newsList}}" wx:key="{{item.id}}">
+				<image src="{{item.poster}}"></image>
+				<text bindtap="goToDetail" data-id="{{item.id}}">
+					{{item.title}}----{{item.add_date}}
+				</text>
+			</view>
+		</view>
+	</view>
 </view>
