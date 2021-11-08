@@ -1,0 +1,219 @@
+@import "../../utils/iconfont.wxss";
+.zhengti {
+  
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    .fanhui {
+      flex: 1;
+
+      >i {
+        margin: 1rem;
+        line-height: 2rem;
+      }
+    }
+
+    .huadong {
+      flex: 3;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+
+      >view {
+        margin-top: 5px;
+        padding: 0 4px;
+      }
+
+      .gequ {
+        flex: 1;
+        text-align: right;
+
+        border-right: 1px ridge black;
+      }
+
+      .geci {
+        flex: 1;
+
+      }
+    }
+
+    .fenxiang {
+      flex: 1;
+
+      >i {
+        line-height: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 1rem;
+      }
+    }
+  }
+.yemian{
+  flex: 1;
+  .yemian-bofang {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .img {
+      // flex: 5;
+      flex-grow: 5;
+      // height: 40%;
+      overflow: hidden;
+      margin: 1rem;
+      // padding: 1rem;
+    }
+
+    .zhuoze {
+      // flex: 3;
+      flex-grow: 3;
+      // height: 20%;
+      display: flex;
+      flex-direction: row;
+
+      .jeisao {
+        width: 70%;
+        margin:0 1rem;
+        .geming{
+          
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          overflow:hidden
+        }
+      }
+
+      .shoucang {
+        width: 20%;
+        font-size: 10px;
+      }
+    }
+
+    .bofang {
+      flex-grow: 2;
+
+      // flex: 2;
+      // height: 20%;
+
+      .chatu{
+
+        display: flex;
+        flex-direction: row;
+        button{
+          line-height: 30px;
+          
+        }
+        
+      }
+      .jindutiao {
+        width: 300px;
+        margin: 10px;
+        border: 1px ridge black;
+
+        .xuanzhong-jindutiao {
+          background-color: black;
+          height: 5px;
+        }
+      }
+
+      .shijian {
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+
+        .jinxing {
+          flex: 1;
+        }
+
+        .quanbu {
+          flex: 1;
+          text-align: right;
+        }
+      }
+      .annui{
+        display: flex;
+        flex-direction: row;
+        button{
+          background-color: black;
+          
+        }
+      }
+
+    }
+  }
+}
+  .middle{
+    height: 80vh;
+    text-align: center;
+    margin-top: 20px;
+   font-size: 16px;
+    .active{
+      color: red;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+   view{
+    height: 60rpx;
+    line-height: 60rpx;
+  }
+  }
+}
+
+.select_box{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px ridge black;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  .liebiao-top{
+    flex: 1;
+  }
+  .liebiao-neirong{
+    padding:0 5px;
+   
+    height: 10rem;
+    flex: 6;
+    box-shadow: 0 0 2px black inset;
+    .select_one{
+      border: black;
+      display: flex;
+      flex-direction: row;
+      border: 1px ridge black;
+      .name{
+        flex: 1;
+        height: 3rem;
+        padding-left: 10px ;
+        line-height: 3rem;
+        font-size: 1rem;
+        
+        .zuoze{
+          display: inline-block;
+          font-size: 0.7rem;
+          margin-left: 10px;
+        }
+      }
+      
+      .shanchu{
+        width: 50px;
+        text-align: center;
+        line-height: 3rem;
+      }
+    }
+
+  }
+  .liebiao-fanhui{
+    flex: 1;
+    width: 100%;
+    text-align: center;
+  }
+}
